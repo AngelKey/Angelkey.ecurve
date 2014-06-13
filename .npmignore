@@ -4,3 +4,4 @@ test/
 component.json
 bower.json
 coverage/
+patch.sh
