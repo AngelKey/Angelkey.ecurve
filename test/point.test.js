@@ -2,7 +2,7 @@ var assert= require('assert')
 var ecurve = require('../')
 var getCurveByName = ecurve.getCurveByName
 
-var BigInteger = require('bigi')
+var BigInteger = require('bn').BigInteger
 var Curve = ecurve.Curve
 var Point = ecurve.Point
 
