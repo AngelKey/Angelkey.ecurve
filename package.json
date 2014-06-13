@@ -1,7 +1,7 @@
 {
-  "name": "ecurve",
+  "name": "keybase-ecurve",
   "version": "0.9.0",
-  "description": "Elliptic curve cryptography",
+  "description": "Elliptic curve cryptography, which uses keybase/bn for bignums",
   "keywords": [
     "cryptography",
     "crypto",
