@@ -1,6 +1,6 @@
 {
   "name": "keybase-ecurve",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Elliptic curve cryptography, which uses keybase/bn for bignums",
   "keywords": [
     "cryptography",
