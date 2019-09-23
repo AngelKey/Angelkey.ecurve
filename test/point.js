@@ -29,7 +29,7 @@ describe('Point', function() {
 
       it('decodes ' + f.hex + ' for ' + f.curve + ' correctly', function() {
         var curve = getCurveByName(f.curve)
-        var buffer = new Buffer(f.hex, 'hex')
+        var buffer = Buffer.from(f.hex, 'hex')
 
         var decoded = Point.decodeFrom(curve, buffer)
         assert.equal(decoded.x.toString(), f.x)
@@ -41,7 +41,7 @@ describe('Point', function() {
     fixtures.invalid.forEach(function(f) {
       it('throws on ' + f.description, function() {
         var curve = getCurveByName('secp256k1')
-        var buffer = new Buffer(f.hex, 'hex')
+        var buffer = Buffer.from(f.hex, 'hex')
 
         assert.throws(function() {
           Point.decodeFrom(curve, buffer)
